@@ -5,10 +5,10 @@ import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-black h-auto ">
-      <div className="m-auto w-10/12 py-10 ">
+      <div className="m-auto w-10/12 py-10  ">
        
 
-        <div className="flex flex-col md:flex-row justify-between mt-10">
+        <div className="flex flex-col  md:flex-row md:justify-between mt-10 gap-y-10">
 
           <div className="space-y-5 flex flex-col justify-start items-start">
           <div className="flex flex-row gap-x-2 justify-center items-center">
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="space-y-5 text-white w-1/2 ">
+          <div className="space-y-5 text-white w-full md:w-1/2 ">
            <h1 className="text-4xl font-bold">Mediversal App</h1>
            <p>Get medicine delivered at home, home sample collection, video consultation, and book homecare services effortlessly. Download the Mediversal App now for convenient and comprehensive healthcare at your fingertips.</p>
           </div>

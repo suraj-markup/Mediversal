@@ -46,7 +46,7 @@ const Login = () => {
 
   const handleSubmit = () => {
     let registered=false;
-    console.log(user.email, user.password);
+    // console.log(user.email, user.password);
     if (user.email.length === 0 || user.password.length === 0) {
       return alert("Please enter email and password");
     }
@@ -69,7 +69,7 @@ const Login = () => {
 
   return (
     <div className="h-screen bg-gradient-to-b  from-white to-cyan-100 flex items-center justify-center">
-      <div className="w-2/6 border-[3px] border-cyan-500 h-3/4 rounded-2xl p-5">
+      <div className="w-3/4 md:w-2/6 border-[3px] border-cyan-500 h-3/4 rounded-2xl p-5">
         <h2 className="text-4xl text-center font-bold text-cyan-600 mb-10">
           LogIn
         </h2>
