@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import Logo from "../assets/Logo";
+
 function Header({ onLoginClick }) {
     const [language, setLanguage] = useState("English");
     const [menuOpen, setMenuOpen] = useState(false); 
@@ -13,38 +13,28 @@ function Header({ onLoginClick }) {
     };
 
 return (
-    <div className="h-20 fixed bg-white w-full flex flex-row  justify-between md:justify-around items-center z-20">
+    <div className="h-20  bg-white w-full flex flex-row  justify-between md:justify-around items-center z-20">
         <div className="p-2 flex flex-row gap-x-2 justify-center items-center">
-            <Logo className="size-14"/>
-            <p>Find Your <br/>
-            <span className="text-[#8AEA7C]">Maid</span></p>
+        <img src="https://www.mediversal.in/logo.png" className="w-48" />
+            
         </div>
         <div className="hidden md:block">
             <ul className="flex flex-row gap-5 ">
-                <li className="p-2">Home</li>
-                <li className="p-2">Who we are</li>
-                <li className="p-2">Get in touch</li>
+                <li className="p-2">About Us</li>
+                <li className="p-2">Diagnostics</li>
+                <li className="p-2">Online Services</li>
+                <li className="p-2">Careers</li>
+                <li className="p-2">Blogs</li>
             </ul>
 
         </div>
         <div className="hidden md:flex flex-row gap-5 ">
-                <select
-                value={language}
-                onChange={handleLanguageChange}
-                className="px-4 py-2    bg-white text-sm "
-            >
-                <option value="English">English</option>
-                <option value="Hindi">Hindi</option>
-                
-            </select>
 
-            <button className="p-2 px-4 bg-[#8AEA7C] rounded-[20px] text-[#12555D] hover:bg-[#12555D] hover:text-[#8AEA7C]">
-                Become a maid
+
+            <button className="p-2 px-4 border-blue-700 border-[3px] rounded-[20px]  hover:bg-blue-600 hover:text-white">
+                Contact Us
             </button>
 
-            <button  onClick={onLoginClick} className="p-2 px-4 bg-gray-200 rounded-[20px] text-[#153F2B] ">
-            Login
-            </button>
 
         </div>
 
